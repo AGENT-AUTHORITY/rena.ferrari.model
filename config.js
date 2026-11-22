@@ -1,8 +1,8 @@
-// Cambiá únicamente estas URL cuando tengas los enlaces oficiales.
-// NO publicar el enlace de invitación del canal VIP.
+// Enlaces oficiales de Rena. No incluyas el enlace privado del VIP.
 window.RENA_LINKS = {
   fanvue: 'https://www.fanvue.com/rena.ferrari',
-  telegramPublico: 'https://t.me/+8DWdQ60XvbZhZTI5', // Canal gratuito; NO es el VIP
+  telegramPublico: 'https://t.me/+8DWdQ60XvbZhZTI5',
   instagram: 'https://www.instagram.com/renata.ferrari.33/',
-  facebook: 'https://www.facebook.com/profile.php?id=61595033260055'
+  facebook: 'https://www.facebook.com/profile.php?id=61595033260055',
+  tiktok: 'https://www.tiktok.com/@renata.ferrari.33'
 };

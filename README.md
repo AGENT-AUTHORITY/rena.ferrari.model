@@ -1,33 +1,29 @@
-# Rena Ferrari · Landing v3
+# Rena Ferrari — Web v4
 
-Sitio de una sola página para Rena. Diseño mobile-first, sin backend ni pasarela de pagos.
+Landing responsive sencilla para el proyecto Rena Ferrari, basada en la versión v3 del repositorio original.
 
-## Activados
+## Archivos para subir a GitHub
+
+- `index.html`: portada, fotografía y enlaces.
+- `styles.css`: diseño mobile-first e iconografía.
+- `config.js`: URLs oficiales en un solo lugar.
+- `main.js`: aplica los enlaces y fecha del pie.
+- `assets/rena-hero.webp`, `assets/rena-sun.webp`: las fotografías de la versión anterior.
+
+## Enlaces activos
+
 - Fanvue: https://www.fanvue.com/rena.ferrari
+- Telegram gratuito: https://t.me/+8DWdQ60XvbZhZTI5
 - Instagram: https://www.instagram.com/renata.ferrari.33/
 - Facebook: https://www.facebook.com/profile.php?id=61595033260055
+- TikTok: https://www.tiktok.com/@renata.ferrari.33
 
-## Pendiente
-- Telegram gratuito: `https://t.me/+8DWdQ60XvbZhZTI5` (enlace de acceso provisto por el usuario). El enlace de invitación VIP **nunca debe publicarse**.
+## Subida
 
-## Cómo probar
-Abrir `index.html` en un navegador. No necesita servidor ni instalación.
+Reemplazar `index.html`, `styles.css`, `config.js` y `main.js` en `AGENT-AUTHORITY/rena.ferrari.model` y mantener la carpeta `assets/`. Los íconos usan Font Awesome desde CDN (necesitan internet).
 
-## Cómo subir a GitHub
-1. Descomprimir el ZIP.
-2. Subir `index.html`, `styles.css`, `config.js`, `main.js` y la carpeta `assets/` al repositorio `AGENT-AUTHORITY/rena.ferrari.model`.
-3. Conservar los nombres y estructura de carpetas.
-4. Verificar la vista móvil y los enlaces.
+El enlace de Telegram compartido es una URL de invitación `t.me/+...`; si se revoca, cambiarlo en `config.js`. No poner aquí el enlace VIP.
 
-Guardar el código en GitHub no implica publicarlo. **GitHub Pages tiene restricciones para sitios cuyo propósito principal sea facilitar transacciones comerciales**. Elegir un hosting adecuado antes de usar esta página como embudo de servicios adultos.
+El acceso VIP se concede de forma manual solo después del pago autorizado, y el control de vencimiento a los 30 días se lleva aparte; esta web no tiene checkout ni controla membresías.
 
-## Seguridad y normas
-- No añadir CUIT, CVU, documentos, credenciales, IDs privados ni enlaces VIP.
-- Fanvue tiene su propio control de acceso y pagos; este sitio solo enlaza.
-- La landing identifica el personaje virtual y el destino +18.
-- Los enlaces a contenido adulto deben compartirse únicamente desde redes/canales que permitan esa promoción. Una landing intermedia no evita las reglas de TikTok/Meta.
-- Los botones no recolectan datos ni procesan pagos. No hay píxeles ni analítica sin configurar.
-
-## Comunidad VIP (gestión manual)
-
-El enlace VIP se comparte individualmente **solo después de confirmar el pago por un medio autorizado**. El acceso dura **30 días desde la fecha de activación**, que se registra fuera del repositorio en un control privado de clientes. Al vencimiento, se renueva o se retira el acceso. No publicar enlace privado, datos de pago, usuarios ni información personal en GitHub.
+Respetar las políticas de alojamiento y las plataformas al compartir enlaces que conduzcan a contenido para adultos; una landing intermedia no elimina esas restricciones. La página identifica a Rena como personaje virtual de IA.

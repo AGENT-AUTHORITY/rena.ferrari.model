@@ -4,3 +4,9 @@
 @media(max-width:790px){.shell{padding:0 23px}.site-header{height:68px}.header-hint{font-size:9px;letter-spacing:.12em}.main{padding:20px 0 26px}.hero{display:block}.photo-column{padding:0;max-width:570px;margin:0 auto}.photo-wrap{height:clamp(290px,78vw,430px);aspect-ratio:auto;border-radius:20px 20px 20px 20px}.hero-img{object-position:50% 45%}.photo-stamp{font-size:10px;bottom:14px}.float-photo{display:none}.content-column{padding:26px 2px 6px;max-width:570px;margin:auto}.eyebrow{font-size:10px;letter-spacing:.17em;margin-bottom:14px}h1{font-size:clamp(43px,9.5vw,62px);margin-bottom:13px}.intro{font-size:14px;line-height:1.56;max-width:400px;margin-bottom:22px}.primary-links{gap:10px;max-width:none}.link-button{min-height:70px;padding:12px 15px;border-radius:13px}.social-heading{margin:23px 0 9px}.signature{margin:25px 0 8px}footer{padding:18px 0 22px;flex-wrap:wrap}}
 @media(max-width:410px){.shell{padding:0 16px}.hero-img{object-position:50% 50%}.photo-wrap{height:315px}.content-column{padding-top:22px}.eyebrow{margin-bottom:9px}.intro{margin-bottom:18px}.link-button{min-height:66px}.social-heading{margin-top:19px}.signature{display:none}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+/* Iconografía de plataformas: conserva el diseño original. */
+.button-icon i {font-size:22px;line-height:1}
+.social-links a {display:inline-flex;align-items:center;gap:9px}
+.social-links a i {display:inline-grid;place-items:center;width:16px;font-size:16px;color:#ad7992}
+.social-links a span {margin-left:2px}
+@media (max-width:410px){.social-links{gap:8px}.social-links a{padding:10px 12px}}

@@ -1,24 +1,34 @@
 (() => {
   const links = window.RENA_LINKS || {};
-  const ids = {
-    fanvue: document.getElementById('fanvue-link'),
-    telegramPublico: document.getElementById('telegram-link')
+
+  const pages = {
+    fanvue: 'fanvue-link',
+    telegramPublico: 'telegram-link',
+    instagram: 'instagram-link',
+    facebook: 'facebook-link',
+    tiktok: 'tiktok-link'
   };
-  if (ids.fanvue && /^https:\/\//.test(links.fanvue || '')) ids.fanvue.href = links.fanvue;
-  for (const [key, id] of [["instagram", "instagram-link"], ["facebook", "facebook-link"]]) {
-    const node = document.getElementById(id);
-    if (node && /^https:\/\//.test(links[key] || "")) node.href = links[key];
+
+  for (const [key, id] of Object.entries(pages)) {
+    const element = document.getElementById(id);
+    const url = links[key];
+    if (!element) continue;
+
+    if (typeof url === 'string' && /^https:\/\//.test(url)) {
+      element.href = url;
+      element.target = '_blank';
+      element.rel = 'noopener noreferrer';
+      element.removeAttribute('aria-disabled');
+    } else {
+      element.href = '#';
+      element.setAttribute('aria-disabled', 'true');
+      element.addEventListener('click', (event) => event.preventDefault());
+    }
   }
-  const telegram = links.telegramPublico;
-  if (ids.telegramPublico && /^https:\/\/t\.me\//.test(telegram || '')) {
-    ids.telegramPublico.href = telegram;
-    ids.telegramPublico.removeAttribute('aria-disabled');
-    ids.telegramPublico.target = '_blank';
-    ids.telegramPublico.rel = 'noopener noreferrer';
-    document.getElementById('telegram-label').textContent = 'Telegram · Acceso gratuito';
-  } else if (ids.telegramPublico) {
-    ids.telegramPublico.addEventListener('click', (event) => event.preventDefault());
-  }
+
+  const label = document.getElementById('telegram-label');
+  if (label && links.telegramPublico) label.textContent = 'Telegram · Acceso gratuito';
+
   const year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 })();
