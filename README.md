@@ -1,29 +1,31 @@
-# Rena Ferrari — Web v4
+# Rena Ferrari — Mi mundo · v5
 
-Landing responsive sencilla para el proyecto Rena Ferrari, basada en la versión v3 del repositorio original.
+Landing HTML responsive inspirada en la distribución visual aportada por el usuario. Todos los retratos fueron proporcionados por el usuario; no se generaron nuevas fotografías.
 
-## Archivos para subir a GitHub
-
-- `index.html`: portada, fotografía y enlaces.
-- `styles.css`: diseño mobile-first e iconografía.
-- `config.js`: URLs oficiales en un solo lugar.
-- `main.js`: aplica los enlaces y fecha del pie.
-- `assets/rena-hero.webp`, `assets/rena-sun.webp`: las fotografías de la versión anterior.
-
-## Enlaces activos
-
+## Canales públicos
 - Fanvue: https://www.fanvue.com/rena.ferrari
 - Telegram gratuito: https://t.me/+8DWdQ60XvbZhZTI5
 - Instagram: https://www.instagram.com/renata.ferrari.33/
-- Facebook: https://www.facebook.com/profile.php?id=61595033260055
 - TikTok: https://www.tiktok.com/@renata.ferrari.33
+- Facebook: https://www.facebook.com/profile.php?id=61595033260055
 
-## Subida
+Modificar enlaces solamente en `config.js`. Este sitio no procesa pagos.
 
-Reemplazar `index.html`, `styles.css`, `config.js` y `main.js` en `AGENT-AUTHORITY/rena.ferrari.model` y mantener la carpeta `assets/`. Los íconos usan Font Awesome desde CDN (necesitan internet).
+## Cómo actualizar el repositorio actual
 
-El enlace de Telegram compartido es una URL de invitación `t.me/+...`; si se revoca, cambiarlo en `config.js`. No poner aquí el enlace VIP.
+1. Descomprimir el ZIP. **No** subir el ZIP directamente.
+2. En https://github.com/AGENT-AUTHORITY/rena.ferrari.model subir a la raíz los archivos `index.html`, `styles.css`, `config.js`, `main.js`, `CNAME`, `README.md` y la carpeta `assets/`.
+3. Usar `Add file` → `Upload files` y confirmar con `Commit changes`, respetando exactamente las rutas. Se sobrescriben los archivos que existan con el mismo nombre.
+4. La URL personalizada sigue siendo `https://renataferrari.lat/` gracias al archivo `CNAME`.
+5. Revisar el despliegue en GitHub → Actions; refrescar la web en modo incógnito y probar los cinco enlaces en móvil.
 
-El acceso VIP se concede de forma manual solo después del pago autorizado, y el control de vencimiento a los 30 días se lleva aparte; esta web no tiene checkout ni controla membresías.
+Si el uploader web no ofrece reemplazo de archivos existentes, editar los cuatro archivos de texto con el editor de GitHub o utilizar GitHub Desktop. Nunca eliminar el dominio personalizado en Settings → Pages.
 
-Respetar las políticas de alojamiento y las plataformas al compartir enlaces que conduzcan a contenido para adultos; una landing intermedia no elimina esas restricciones. La página identifica a Rena como personaje virtual de IA.
+## Comunidad paga VIP
+No publicar la invitación privada. Tras pago verificado mediante proveedor compatible, enviar invitación individual con control manual de acceso y vencimiento a los 30 días. Un enlace de invitación que caduca no expulsa a usuarios ya inscritos. Mantener el registro privado fuera de GitHub.
+
+## Notas
+- La página no contiene formularios de pago ni datos de identidad fiscal.
+- No mostrar contadores de seguidores o insignias de verificación ficticios.
+- La web indica de forma discreta que Rena es una creadora virtual de IA.
+- Las reglas de las redes y del proveedor de hosting siguen aplicando a los enlaces de destino.

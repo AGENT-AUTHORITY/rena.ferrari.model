@@ -3,61 +3,101 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f8f5f2">
-  <meta name="description" content="Conocé el mundo de Rena Ferrari y encontrá sus canales oficiales.">
-  <meta property="og:title" content="Rena Ferrari | Mi mundo">
-  <meta property="og:description" content="Un poquito más cerca. Encontrá mis espacios oficiales acá.">
+  <meta name="theme-color" content="#0c0b10">
+  <meta name="description" content="Rena Ferrari. Un poquito de mi mundo: fotos, redes y comunidad oficial.">
   <meta property="og:type" content="website">
-  <title>Rena Ferrari — Mi mundo</title>
-  <link rel="preload" as="image" href="assets/rena-hero.webp">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <meta property="og:title" content="Rena Ferrari — Mi mundo">
+  <meta property="og:description" content="Vení a conocer un poquito más de mí ♡">
+  <meta property="og:image" content="https://renataferrari.lat/assets/hero.webp">
+  <meta property="og:url" content="https://renataferrari.lat/">
+  <link rel="canonical" href="https://renataferrari.lat/">
+  <link rel="preload" as="image" href="assets/hero.webp" fetchpriority="high">
   <link rel="stylesheet" href="styles.css">
+  <title>Rena Ferrari — Mi mundo</title>
 </head>
 <body>
-  <div class="shell">
-    <header class="site-header">
-      <a class="logo" href="#inicio" aria-label="Rena Ferrari, inicio">rena<span>.</span></a>
-      <span class="header-hint">Mi pequeño mundo <span aria-hidden="true">✳</span></span>
-    </header>
+  <!-- SVG de íconos vectoriales: no cargamos librerías externas -->
+  <svg class="svg-icons" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="17.55" cy="6.55" r="1.2" fill="currentColor"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path fill="currentColor" d="M13.82 22v-8.8h2.96l.44-3.44h-3.4V7.57c0-1 .28-1.68 1.7-1.68h1.82V2.82A24.9 24.9 0 0 0 14.68 2c-2.62 0-4.4 1.6-4.4 4.53v3.23H7.32v3.44h2.96V22h3.54Z"/></symbol>
+    <symbol id="i-tiktok" viewBox="0 0 24 24"><path fill="currentColor" d="M16.86 2c.24 2.17 1.44 3.46 3.46 3.6v3.48a8.52 8.52 0 0 1-3.51-1.02v7.1c0 3.87-2.71 6.84-6.5 6.84-3.5 0-6.35-2.83-6.35-6.3 0-3.88 3.07-6.54 6.64-6.54.47 0 .86.04 1.26.12v3.49a4.77 4.77 0 0 0-1.19-.15c-1.9 0-3.22 1.24-3.22 3.07 0 1.61 1.28 2.95 2.89 2.95 1.83 0 2.94-1.31 2.94-3.59V2h3.52Z"/></symbol>
+    <symbol id="i-telegram" viewBox="0 0 24 24"><path fill="currentColor" d="m21.48 3.68-3.12 15.1c-.23 1.07-.86 1.33-1.74.83l-4.82-3.56-2.33 2.24c-.26.26-.48.48-.98.48l.34-4.9L17.8 5.78c.39-.35-.09-.54-.61-.2l-11.05 6.9-4.75-1.49c-1.03-.32-1.05-1.04.22-1.54L20.2 2.3c.86-.32 1.61.2 1.28 1.38Z"/></symbol>
+    <symbol id="i-fanvue" viewBox="0 0 24 24"><path d="M12 20.7 3.85 12.6A5.25 5.25 0 0 1 11.3 5.2l.7.72.7-.72a5.25 5.25 0 0 1 7.45 7.4L12 20.7Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m15.8 1.4.6 2 .6-2 2-.6-2-.6-.6-2-.6 2-2 .6 2 .6Z" transform="translate(0 4)" fill="currentColor"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M5 5 19 19M19 5 5 19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  </svg>
+  <header class="masthead" id="top">
+    <a class="logo" href="#top" aria-label="Inicio Rena Ferrari">rena<span>.</span></a>
+    <div class="masthead-right"><span class="online-dot" aria-hidden="true"></span> mi pequeño mundo <span class="masthead-star">✳</span></div>
+  </header>
 
-    <main id="inicio" class="main">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="photo-column">
-          <div class="photo-wrap">
-            <img class="hero-img" src="assets/rena-hero.webp" width="1000" height="1092" alt="Retrato de Rena recostada con ropa negra" fetchpriority="high">
-            <span class="photo-stamp">RENA · FERRARI</span>
-          </div>
-          <div class="float-photo" aria-hidden="true"><img src="assets/rena-sun.webp" loading="lazy" alt=""></div>
-        </div>
-        <div class="content-column">
-          <p class="eyebrow"><span class="dot"></span> BIENVENIDO A MI MUNDO</p>
-          <h1 id="hero-title">Hola, soy <em>Rena.</em></h1>
-          <p class="intro">Un poquito de mis días, mis fotos y mis lugares favoritos. <span>¿Nos vemos por acá?</span></p>
-          <div class="primary-links" aria-label="Mis espacios oficiales">
-            <a class="link-button featured" id="fanvue-link" href="https://www.fanvue.com/rena.ferrari" target="_blank" rel="noopener noreferrer" data-source="fanvue">
-              <span class="button-icon" aria-hidden="true"><i class="fa-solid fa-heart"></i></span>
-              <span class="button-copy"><strong>Mi Fanvue</strong><small>Contenido exclusivo · +18</small></span>
-              <span class="button-arrow" aria-hidden="true">↗</span>
-            </a>
-            <a class="link-button" id="telegram-link" href="https://t.me/+8DWdQ60XvbZhZTI5" target="_blank" rel="noopener noreferrer" data-source="telegram">
-              <span class="button-icon" aria-hidden="true"><i class="fa-brands fa-telegram"></i></span>
-              <span class="button-copy"><strong>Mi comunidad</strong><small id="telegram-label">Telegram · Acceso gratuito</small></span>
-              <span class="button-arrow" aria-hidden="true">↗</span>
-            </a>
-          </div>
-          <p class="social-heading">También nos encontramos en</p>
-          <nav class="social-links" aria-label="Mis redes sociales">
-            <a id="instagram-link" href="https://www.instagram.com/renata.ferrari.33/" target="_blank" rel="noopener noreferrer" data-source="instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram <span aria-hidden="true">↗</span></a>
-            <a id="facebook-link" href="https://www.facebook.com/profile.php?id=61595033260055" target="_blank" rel="noopener noreferrer" data-source="facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i> Facebook <span aria-hidden="true">↗</span></a>
-            <a id="tiktok-link" href="https://www.tiktok.com/@renata.ferrari.33" target="_blank" rel="noopener noreferrer" data-source="tiktok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i> TikTok <span aria-hidden="true">↗</span></a>
-          </nav>
-          <p class="signature">Con cariño, <span>Rena ♡</span></p>
-        </div>
-      </section>
-    </main>
-    <footer><span>© <span id="year">2026</span> Rena Ferrari</span><span>Personaje virtual de IA · +18</span></footer>
+  <main class="container">
+    <section class="hero" aria-labelledby="hero-heading">
+      <img class="hero-photo" src="assets/hero.webp" alt="Rena Ferrari recostada en una cama junto a una ventana" width="1200" height="1310" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <span class="eyebrow">UN POQUITO MÁS CERCA ♡</span>
+        <h1 id="hero-heading">Rena <em>Ferrari</em><span class="verified" aria-label="Creadora virtual">✦</span></h1>
+        <p>just a little bit of my world</p>
+      </div>
+    </section>
+
+    <div class="below-hero">
+      <nav class="icon-nav" aria-label="Canales oficiales">
+        <a href="https://www.fanvue.com/rena.ferrari" data-link="fanvue" target="_blank" rel="noopener noreferrer" aria-label="Fanvue de Rena"><svg><use href="#i-fanvue"/></svg></a>
+        <a href="https://t.me/+8DWdQ60XvbZhZTI5" data-link="telegramPublico" target="_blank" rel="noopener noreferrer" aria-label="Telegram público de Rena"><svg><use href="#i-telegram"/></svg></a>
+        <a href="https://www.instagram.com/renata.ferrari.33/" data-link="instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Rena"><svg><use href="#i-instagram"/></svg></a>
+        <a href="https://www.tiktok.com/@renata.ferrari.33" data-link="tiktok" target="_blank" rel="noopener noreferrer" aria-label="TikTok de Rena"><svg><use href="#i-tiktok"/></svg></a>
+        <a href="https://www.facebook.com/profile.php?id=61595033260055" data-link="facebook" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Rena"><svg><use href="#i-facebook"/></svg></a>
+      </nav>
+      <p class="intro">Elegí dónde nos encontramos <span aria-hidden="true">♡</span></p>
+    </div>
+
+    <section class="destinations" aria-label="Mis espacios oficiales">
+      <a class="destination destination-main destination-fanvue" href="https://www.fanvue.com/rena.ferrari" data-link="fanvue" target="_blank" rel="noopener noreferrer">
+        <img src="assets/beach.webp" loading="lazy" alt="Rena en la playa junto al mar turquesa" width="1080" height="1350">
+        <span class="dest-shade"></span><span class="dest-mark"><svg><use href="#i-fanvue"/></svg></span>
+        <span class="dest-bottom"><span><small>MI ESPACIO EXCLUSIVO · +18</small><strong>Fanvue</strong></span><svg class="dest-arrow"><use href="#i-arrow"/></svg></span>
+      </a>
+      <a class="destination destination-main destination-telegram" href="https://t.me/+8DWdQ60XvbZhZTI5" data-link="telegramPublico" target="_blank" rel="noopener noreferrer">
+        <img src="assets/window.webp" loading="lazy" alt="Retrato de Rena junto a una ventana" width="937" height="1678">
+        <span class="dest-shade"></span><span class="dest-mark"><svg><use href="#i-telegram"/></svg></span>
+        <span class="dest-bottom"><span><small>ENTRÁ GRATIS</small><strong>Mi comunidad</strong></span><svg class="dest-arrow"><use href="#i-arrow"/></svg></span>
+      </a>
+    </section>
+
+    <section class="social-section" aria-label="También estoy en">
+      <div class="section-heading"><h2>Nos seguimos viendo por acá</h2><span aria-hidden="true">✳</span></div>
+      <div class="social-cards">
+        <a class="destination social-card" data-link="instagram" href="https://www.instagram.com/renata.ferrari.33/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/sun.webp" loading="lazy" alt="Selfie de Rena bajo el sol" width="941" height="1672"><span class="dest-shade"></span><span class="dest-mark"><svg><use href="#i-instagram"/></svg></span><span class="dest-bottom"><strong>Instagram</strong><svg class="dest-arrow"><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="destination social-card" data-link="tiktok" href="https://www.tiktok.com/@renata.ferrari.33" target="_blank" rel="noopener noreferrer">
+          <img src="assets/gym.webp" loading="lazy" alt="Selfie de Rena en el gimnasio" width="1086" height="1448"><span class="dest-shade"></span><span class="dest-mark"><svg><use href="#i-tiktok"/></svg></span><span class="dest-bottom"><strong>TikTok</strong><svg class="dest-arrow"><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="destination social-card" data-link="facebook" href="https://www.facebook.com/profile.php?id=61595033260055" target="_blank" rel="noopener noreferrer">
+          <img src="assets/elevator.webp" loading="lazy" alt="Rena tomándose una selfie en el ascensor" width="1080" height="1350"><span class="dest-shade"></span><span class="dest-mark"><svg><use href="#i-facebook"/></svg></span><span class="dest-bottom"><strong>Facebook</strong><svg class="dest-arrow"><use href="#i-arrow"/></svg></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="gallery-section" aria-labelledby="gallery-title">
+      <div class="section-heading"><div><span class="eyebrow">MOMENTOS</span><h2 id="gallery-title">Un poco de mis días</h2></div><span class="flower">✳</span></div>
+      <div class="gallery" aria-label="Galería de Rena">
+        <button class="gallery-item" data-full="assets/hero.webp" data-caption="Días tranquilos" aria-label="Ver foto: días tranquilos"><img src="assets/hero.webp" alt="Rena recostada" loading="lazy"></button>
+        <button class="gallery-item" data-full="assets/gym-mat.webp" data-caption="Después de entrenar" aria-label="Ver foto: después de entrenar"><img src="assets/gym-mat.webp" alt="Rena sentada en el gimnasio" loading="lazy"></button>
+        <button class="gallery-item" data-full="assets/beach.webp" data-caption="Un recuerdo del mar" aria-label="Ver foto: un recuerdo del mar"><img src="assets/beach.webp" alt="Rena en la playa" loading="lazy"></button>
+        <button class="gallery-item" data-full="assets/lavender.webp" data-caption="El solcito y la lavanda" aria-label="Ver foto: la lavanda"><img src="assets/lavender.webp" alt="Lavandas violetas en el jardín" loading="lazy"></button>
+        <button class="gallery-item" data-full="assets/outfit.webp" data-caption="Entrenamiento" aria-label="Ver foto: entrenamiento"><img src="assets/outfit.webp" alt="Selfie deportiva de Rena" loading="lazy"></button>
+        <button class="gallery-item" data-full="assets/window.webp" data-caption="Un poquito de mí" aria-label="Ver foto: un poquito de mí"><img src="assets/window.webp" alt="Retrato de Rena" loading="lazy"></button>
+      </div>
+    </section>
+  </main>
+  <footer><span>© <span id="year">2026</span> Rena Ferrari</span><span>Creadora virtual de IA · Contenido para mayores de 18 años</span></footer>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Fotografía ampliada" aria-hidden="true" hidden>
+    <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar fotografía"><svg><use href="#i-x"/></svg></button>
+    <img id="lightbox-photo" src="assets/hero.webp" alt="Fotografía de Rena ampliada"><p id="lightbox-caption"></p>
   </div>
-  <script src="config.js"></script>
-  <script src="main.js"></script>
+  <script src="config.js"></script><script src="main.js"></script>
 </body>
 </html>
